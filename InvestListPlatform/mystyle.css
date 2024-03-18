@@ -1,0 +1,261 @@
+/* Base styling */
+
+body {
+    padding: 0;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #d3b486 30%, #b68440 70%);
+    position: relative;
+
+    font-family: 'Raleway', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.title {
+    padding-top: 64px;
+    font-size: 30px;
+    font-weight: 900;
+    text-align: center;
+    color: #f6ede4;
+}
+
+.input {
+    width: 60%;
+    padding: 12px 24px;
+    background-color: transparent;
+    transition: transform 250ms ease-in-out;
+    font-size: 14px;
+    line-height: 18px;
+    color: #575756;
+    background-color: transparent;
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath d='M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z'/%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-size: 18px 18px;
+    background-position: 95% center;
+    border-radius: 50px;
+    border: 1px solid #575756;
+    transition: all 250ms ease-in-out;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    margin-bottom: 20px;
+
+    &::placeholder {
+        color: color(#575756 a(0.8));
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+    }
+
+    &:hover,
+    &:focus {
+        padding: 12px 0;
+        outline: 0;
+        border: 1px solid transparent;
+        border-bottom: 1px solid #575756;
+        border-radius: 0;
+        background-position: 100% center;
+    }
+}
+
+
+
+.text {
+    /* border-radius: 15px 15px 50px 30px; */
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    color: #f6ede4;
+    height: 100%;
+}
+
+
+.parent-container {
+    padding-top: 1pc;
+    padding-left: 10pc;
+    padding-right: 10pc;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* Three columns with equal width */
+    grid-gap: 20px;
+    /* Adjust the gap between containers */
+}
+
+.child-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: inline-block;
+    margin-right: 10px;
+    /* Adjust as needed */
+    margin-bottom: 10px;
+}
+
+.child-container:hover {
+    transform: scale(1.10);
+
+}
+
+.round-blue {
+    padding: 10px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #8e9ca5;
+    color: white;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.icon-text {
+    margin-top: 5px;
+    /* Adjust as needed */
+    text-align: center;
+}
+
+.icon-text span {
+    display: block;
+}
+
+.icon-text i {
+    margin-bottom: 5px;
+    /* Adjust as needed */
+}
+
+.icon-text a {
+    text-decoration: none;
+    color: black;
+}
+
+.image-text-container {
+    display: flex;
+    align-items: center;
+}
+
+.image-container {
+    flex: 1;
+    max-width: 100%;
+}
+
+.image-container img {
+    width: 50%;
+    display: block;
+    padding-top: 5pc;
+    margin: 0 auto;/
+}
+
+.text-container {
+    flex: 1;
+    padding-left: 20px;
+    font-size: 20px;
+}
+
+.text-container h3 {
+    margin-top: 0;
+}
+
+.text-container p {
+    margin-bottom: 0;
+}
+
+.description-text {
+    color: #f6ede4;
+}
+
+
+/*css of list platform */
+.platform-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.platform {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.platform img {
+    width: 50px;
+    /* Adjust size as needed */
+    height: auto;
+    margin-right: 10px;
+}
+
+.platform p {
+    margin: 0;
+}
+
+/**/
+
+.list-tile {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    display: none;
+    /* Optional: Add a border between list tiles */
+}
+
+.list-tile-icon {
+    flex: 0 auto;
+    /* This prevents the icon from stretching */
+    margin-right: 20px;
+}
+
+.list-tile-content {
+    flex: 1;
+    /* This makes the content fill the available space */
+}
+
+.list-tile-title {
+    margin: 0;
+}
+
+.list-tile-subtitle {
+    margin: 5px 0 0;
+    /* Adjust spacing as needed */
+    font-size: 15px;
+    /* Adjust font size as needed */
+    color: #666;
+    /* Optional: Adjust color */
+}
+
+.list-tile-title a {
+    color: black;
+    font-weight: 800;
+}
+
+.list-tile-icon img {
+    padding-left: 50px;
+    width: 200px;
+    /* Adjust size as needed */
+    height: 200px;
+    /* Adjust size as needed */
+    object-fit: contain;
+    /* Maintain aspect ratio */
+    margin-right: 100px;
+    /* Add spacing between the image and text */
+}
+
+#pageTitle {
+    padding: 10px;
+    font-weight: 700;
+    text-align: center;
+    color: #f6ede4;
+    height: 100%;
+}
+
+#searchInList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 64px;
+    text-align: center;
+}

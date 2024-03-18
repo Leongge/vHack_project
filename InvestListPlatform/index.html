@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Investment Platforms</title>
+    <link rel="stylesheet" href="mystyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container">
+        <p class="title">
+            What are you looking for?
+        </p>
+        <input class="input" type="text" placeholder="Search">
+    </div>
+
+    <div class="container1">
+        <p class="text">We provide the different investment platforms to grow up your financial concepts</p>
+    </div>
+
+    <div class="parent-container">
+        <div class="child-container" data-title="Retail Investment Platform"
+            data-description="These platforms are designed for individual investors who prefer to manage their investments independently without the assistance of a financial advisor.Investors can access a wide range of investment products such as stocks, bonds, mutual funds, ETFs, and more.">
+            <div class="round-blue">
+                <i class="material-icons">person</i>
+            </div>
+            <span class="icon-text"><a href="listPlatform.html?value=RIP">Retail Investment Platform</a>
+            </span>
+
+        </div>
+        <div class="child-container" data-title="Bank Investment Platform"
+            data-description="Many local banks provide online investment platforms that allow their customers to invest in various financial products independently.These platforms typically offer access to stocks, mutual funds, bonds, and other investment products.">
+            <div class="round-blue">
+                <i class="fa fa-bank"></i>
+            </div>
+            <span class="icon-text"><a href="listPlatform.html?value=BIP">Bank Investment Platform</a>
+            </span>
+
+        </div>
+        <div class="child-container" data-title="Managed Investment Platform"
+            data-description="Managed investment platforms provide investors with professionally managed portfolios tailored to their risk tolerance and investment goals.Investors entrust their funds to portfolio managers or robo-advisors who make investment decisions on their behalf.">
+            <div class="round-blue">
+                <i class="fa fa-group"></i>
+            </div>
+            <span class="icon-text"><a href="listPlatform.html?value=MIP">Managed Investment Platform</a>
+            </span>
+
+
+        </div>
+    </div>
+
+    <div class="image-text-container">
+        <div class="image-container">
+            <img src="image/backInvest.jpg" alt="Description">
+        </div>
+        <div class="text-container">
+            <h3 class="description-title">Description</h3>
+            <p class="description-text">Lets take a look for these platforms!!!</p>
+        </div>
+    </div>
+
+
+    <script>
+        const childContainers = document.querySelectorAll('.child-container');
+
+        childContainers.forEach(container => {
+            container.addEventListener('mouseover', () => {
+                const description = container.dataset.title;
+                const descriptionText = document.querySelector('.description-title');
+                descriptionText.textContent = description;
+            });
+
+            container.addEventListener('mouseout', () => {
+                const defaultDescription = container.dataset.description;
+                const descriptiontext = document.querySelector('.description-text');
+                descriptiontext.textContent = defaultDescription;
+            });
+        });
+
+    </script>
+</body>
+
+</html>
