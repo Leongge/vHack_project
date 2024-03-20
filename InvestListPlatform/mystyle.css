@@ -1,5 +1,3 @@
-/* Base styling */
-
 body {
     padding: 0;
     min-height: 100vh;
@@ -64,7 +62,6 @@ body {
 
 
 .text {
-    /* border-radius: 15px 15px 50px 30px; */
     font-size: 20px;
     font-weight: 700;
     text-align: center;
@@ -79,9 +76,7 @@ body {
     padding-right: 10pc;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    /* Three columns with equal width */
     grid-gap: 20px;
-    /* Adjust the gap between containers */
 }
 
 .child-container {
@@ -92,7 +87,6 @@ body {
     text-align: center;
     display: inline-block;
     margin-right: 10px;
-    /* Adjust as needed */
     margin-bottom: 10px;
 }
 
@@ -115,7 +109,6 @@ body {
 
 .icon-text {
     margin-top: 5px;
-    /* Adjust as needed */
     text-align: center;
 }
 
@@ -125,7 +118,6 @@ body {
 
 .icon-text i {
     margin-bottom: 5px;
-    /* Adjust as needed */
 }
 
 .icon-text a {
@@ -170,29 +162,15 @@ body {
 
 
 /*css of list platform */
-.platform-list {
-    display: flex;
-    flex-direction: column;
-}
 
-.platform {
+.containerContent {
+    background-color: white;
     display: flex;
+    flex-direction: row;
     align-items: center;
-    margin-bottom: 20px;
+    width: 70%;
+    margin: 0 auto;
 }
-
-.platform img {
-    width: 50px;
-    /* Adjust size as needed */
-    height: auto;
-    margin-right: 10px;
-}
-
-.platform p {
-    margin: 0;
-}
-
-/**/
 
 .list-tile {
     display: flex;
@@ -200,18 +178,15 @@ body {
     padding: 10px;
     border-bottom: 1px solid #ccc;
     display: none;
-    /* Optional: Add a border between list tiles */
 }
 
 .list-tile-icon {
     flex: 0 auto;
-    /* This prevents the icon from stretching */
     margin-right: 20px;
 }
 
 .list-tile-content {
     flex: 1;
-    /* This makes the content fill the available space */
 }
 
 .list-tile-title {
@@ -220,11 +195,8 @@ body {
 
 .list-tile-subtitle {
     margin: 5px 0 0;
-    /* Adjust spacing as needed */
     font-size: 15px;
-    /* Adjust font size as needed */
     color: #666;
-    /* Optional: Adjust color */
 }
 
 .list-tile-title a {
@@ -235,13 +207,9 @@ body {
 .list-tile-icon img {
     padding-left: 50px;
     width: 200px;
-    /* Adjust size as needed */
     height: 200px;
-    /* Adjust size as needed */
     object-fit: contain;
-    /* Maintain aspect ratio */
     margin-right: 100px;
-    /* Add spacing between the image and text */
 }
 
 #pageTitle {
