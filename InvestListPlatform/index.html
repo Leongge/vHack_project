@@ -3,7 +3,7 @@
 
 <head>
     <title>Investment Platforms</title>
-    <link rel="stylesheet" href="mystyle.css">
+    <link rel="stylesheet" href="listPlatform.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
@@ -62,25 +62,8 @@
         </div>
     </div>
 
+    <script src="index.js"></script>
 
-    <script>
-        const childContainers = document.querySelectorAll('.child-container');
-
-        childContainers.forEach(container => {
-            container.addEventListener('mouseover', () => {
-                const description = container.dataset.title;
-                const descriptionText = document.querySelector('.description-title');
-                descriptionText.textContent = description;
-            });
-
-            container.addEventListener('mouseout', () => {
-                const defaultDescription = container.dataset.description;
-                const descriptiontext = document.querySelector('.description-text');
-                descriptiontext.textContent = defaultDescription;
-            });
-        });
-
-    </script>
 </body>
 
 </html>
