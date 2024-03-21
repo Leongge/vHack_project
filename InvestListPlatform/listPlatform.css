@@ -7,11 +7,15 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
-.container {
+.container_invest {
     display: flex;
     flex-direction: column;
     align-items: center;
 
+}
+
+.padding_top{
+    padding-top: 40px;
 }
 
 .title {
